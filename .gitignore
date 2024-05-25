@@ -1,0 +1,11 @@
+# Ignore les fichiers de configuration système
+.idea/
+.vscode/
+
+# Ignore les fichiers de sauvegarde
+*.bak
+
+*.sql
+
+# Ignore le dossier node_modules
+node_modules/
