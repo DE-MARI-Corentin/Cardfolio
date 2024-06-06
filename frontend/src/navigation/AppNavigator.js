@@ -8,12 +8,18 @@ import CollectionScreen from '../screens/CollectionScreen';
 const Stack = createStackNavigator();
 
 const AppNavigator = () => (
-    <NavigationContainer independent={true}>
-        <Stack.Navigator initialRouteName="NewReleases">
-            <Stack.Screen name="NewReleases" component={NewReleasesScreen} />
-            <Stack.Screen name="Collection" component={CollectionScreen} />
-        </Stack.Navigator>
-    </NavigationContainer>
+    <Stack.Navigator initialRouteName="NewReleases">
+      <Stack.Screen 
+        name="NewReleases" 
+        component={NewReleasesScreen} 
+        options={{ title: 'Nouveautés' }}
+      />
+      <Stack.Screen 
+        name="Collection" 
+        component={CollectionScreen} 
+        options={{ title: 'Ma Collection' }}
+      />
+    </Stack.Navigator>
 );
 
 export default AppNavigator;
