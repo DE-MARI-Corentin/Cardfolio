@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from 'react-native';
-
-export default function Tab() {
+import NewReleasesScreen from '../../src/Screens/newReleasesScreen';
+export default function Home() {
   return (
     <View style={styles.container}>
-      <Text>Tab [Home|Settings]</Text>
+      <NewReleasesScreen></NewReleasesScreen>
     </View>
   );
 }
